@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean texture <= 19.47\ngini = 0.466\nsamples = 455\nvalue = [168, 287]\nclass = 1, benign", fillcolor="#add6f4"] ;
+1 [label="mean symmetry <= 0.209\ngini = 0.269\nsamples = 256\nvalue = [41, 215]\nclass = 1, benign", fillcolor="#5fb0ea"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.215\nsamples = 229\nvalue = [28, 201]\nclass = 1, benign", fillcolor="#55abe9"] ;
+1 -> 2 ;
+3 [label="gini = 0.499\nsamples = 27\nvalue = [13, 14]\nclass = 1, benign", fillcolor="#f1f8fd"] ;
+1 -> 3 ;
+4 [label="mean symmetry <= 0.172\ngini = 0.462\nsamples = 199\nvalue = [127, 72]\nclass = 0, malignant", fillcolor="#f4c8a9"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.467\nsamples = 62\nvalue = [23, 39]\nclass = 1, benign", fillcolor="#aed7f4"] ;
+4 -> 5 ;
+6 [label="gini = 0.366\nsamples = 137\nvalue = [104, 33]\nclass = 0, malignant", fillcolor="#eda978"] ;
+4 -> 6 ;
+}
